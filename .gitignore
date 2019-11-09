@@ -1,0 +1,14 @@
+*.class
+*.iml
+*.ipr
+.idea/
+*.idea
+/build
+exemplo1/
+fileToRead/
+inputFiles/
+out/
+outputFiles/
+testFiles/
+.gradle/
+exemplo01/
