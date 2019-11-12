@@ -17,10 +17,11 @@ public class CorrentistaPF extends Correntista  {
     public String getDescription(){
         return new StringBuffer()
                 .append("Tipo de Conta: ").append(TIPO_CONTA)
-                .append("Nome: ").append(super.getNome())
-                .append("Conta: ").append(this.getConta())
-                .append("Tipo Documento: ").append(this.documentType)
-                .append("Documento: ").append(this.document)
+                .append(" Nome: ").append(super.getNome())
+                .append(" Agencia: ").append(this.getConta().getAgencia())
+                .append(" Conta: ").append(this.getConta().getNumero())
+                .append(" Tipo Documento: ").append(this.documentType)
+                .append(" Documento: ").append(this.document)
                 .toString();
     }
 
