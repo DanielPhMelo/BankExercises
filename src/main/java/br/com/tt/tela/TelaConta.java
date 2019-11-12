@@ -2,11 +2,9 @@ package br.com.tt.tela;
 
 import br.com.tt.dao.BancoDao;
 import br.com.tt.model.Conta;
-import br.com.tt.model.Correntista;
 import br.com.tt.util.ScannerInterface;
 import br.com.tt.util.UsuarioUtil;
 
-import java.util.Scanner;
 
 public class TelaConta implements Tela {
     private BancoDao bancoDao;
@@ -38,7 +36,7 @@ public class TelaConta implements Tela {
         }
     }
 
-    private void exibeMenuCriarConta() {
+    public void exibeMenuCriarConta() {
         usuarioUtil.showMessage(" Informe o numero da conta ");
         Integer accountNumber = Integer.parseInt(this.scanner.nextLine());
         usuarioUtil.showMessage(" Informe a agencia da conta ");
@@ -47,7 +45,7 @@ public class TelaConta implements Tela {
         usuarioUtil.showMessage("Conta cadastrada com sucesso!");
     }
 
-    private void exibeMenuListarConta() {
+    public void exibeMenuListarConta() {
         usuarioUtil.showMessage("Lista de Contas:");
         for (Conta conta : bancoDao.listarContas()) {
             usuarioUtil.showMessage(conta.getDescription());

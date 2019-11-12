@@ -9,7 +9,6 @@ import br.com.tt.util.ScannerInterface;
 import br.com.tt.util.UsuarioUtil;
 
 import java.util.List;
-import java.util.Scanner;
 
 public class TelaCorrentista implements Tela{
     private BancoDao bancoDao;
