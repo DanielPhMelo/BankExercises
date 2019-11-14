@@ -1,8 +1,8 @@
 package br.com.tt.model;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.*;
 
 public class ContaTest {
 
@@ -15,7 +15,7 @@ public class ContaTest {
         String description = conta.getDescription();
 
         //Assert
-        assertEquals(" Agência: 1 - Número da Conta: 2", description);
+        Assertions.assertEquals(" Agência: 1 - Número da Conta: 2", description);
     }
 
 }

@@ -1,8 +1,7 @@
 package br.com.tt.model;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.Assert.*;
 
 public class CorrentistaPFTest {
 
@@ -24,7 +23,7 @@ public class CorrentistaPFTest {
         String returnedDescription = correntistaPF.getDescription();
 
         //Assert
-        assertEquals(expectedConcatString, returnedDescription);
+        Assertions.assertEquals(expectedConcatString, returnedDescription);
 
     }
 
